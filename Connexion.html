@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/Sections/log.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Log-In</title>
+  </head>
+  <body style="font-family: 'Ubuntu', sans-serif">
+    <!-- Navbar -->
+    <nav id="myNavBar" class="navbar sticky-top">
+      <div class="navbar-btns d-flex justify-content-center">
+        <img src="#" alt="" class="#" />
+        <a class="navbar-btn" id="home" href="./index.html">ACCUEIL</a>
+        <a class="navbar-btn" id="apropos" href="./Pourquoi_Ibn_Batouta.html"
+          >A PROPOS</a
+        >
+        <a class="navbar-btn" id="admission" href="./Admission.html"
+          >ADMISSION</a
+        >
+        <a class="navbar-btn" id="examens" href="./Examens_page_accueil.html"
+          >EXAMENS</a
+        >
+        <div id="dropdown" class="dropdown-content rounded-2">
+          <a id="why_drop" href="./Examens_nationaux.html">Examens Nationaux</a>
+          <a href="./Examens_regionaux.html">Examens Régionaux</a>
+        </div>
+        <a class="navbar-btn ps-4" id="contact" href="./contact.html"
+          >CONTACT</a
+        >
+        <a class="navbar-btn ps-4" id="connection" href="./Connexion.html"
+          >CONNEXION</a
+        >
+      </div>
+    </nav>
+
+    <!-- Main page -->
+
+    <div
+      class="grand_title position-absolute start-50 translate-middle-x fw-bold mt-5"
+    >
+      IBN BATOUTA
+    </div>
+    <div
+      class="welcome rounded-4 position-absolute start-50 translate-middle-x"
+    >
+      <div class="welcome-text fs-3">
+        Bienvenue dans votre <br />Espace Parent
+      </div>
+    </div>
+
+    <form class="position-absolute start-50 translate-middle-x">
+      <input
+        class="user rounded-4 mb-2"
+        type="text"
+        placeholder="Numéro Massar"
+        id="username"
+      />
+
+      <input
+        class="password rounded-4 mt-3"
+        type="password"
+        placeholder="Mot de passe"
+        id="password"
+      />
+
+      <button
+        class="button_log rounded-4 position-absolute start-50 translate-middle-x fs-4 mt-3 shadow-lg"
+      >
+        CONNEXION
+      </button>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Garder ma session active
+        </label>
+      </div>
+
+      <div class="form-check position-absolute end-0">
+        <a class="form-check-label" for="flexCheckDefault">
+          Mot de passe oublié?
+        </a>
+      </div>
+    </form>
+
+    <div
+      class="signup position-absolute bottom-0 start-50 translate-middle-x mb-4"
+    >
+      <button
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#SingupModal"
+        class="signup_text"
+      >
+        Créer un compte
+      </button>
+      <svg
+        class=""
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#b67929"
+          d="M5.7 6.71a.996.996 0 0 0 0 1.41L9.58 12L5.7 15.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L7.12 6.71c-.39-.39-1.03-.39-1.42 0z"
+        />
+        <path
+          fill="#b67929"
+          d="M12.29 6.71a.996.996 0 0 0 0 1.41L16.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L13.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+        />
+      </svg>
+    </div>
+
+    <!-- Modal Sign Up -->
+    <div
+      class="modal fade"
+      id="SingupModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title ms-3" id="exampleModalLabel">
+              Créer un compte
+            </h1>
+            <button
+              type="button"
+              class="btn-close mb-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container ms-n2">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    class="new nom rounded-3"
+                    type="text"
+                    placeholder="Nom"
+                    id="username"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    class="new prenom rounded-3"
+                    type="text"
+                    placeholder="Prénom"
+                    id="username"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    class="new mail rounded-3"
+                    type="text"
+                    placeholder="Numéro Massar"
+                    id="username"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    class="new phone rounded-3"
+                    type="text"
+                    placeholder="Numéro de téléphone"
+                    id="username"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <input
+                    class="new new_password rounded-3"
+                    type="password"
+                    placeholder="Nouveau mot de passe"
+                    id="password"
+                  />
+                  <input
+                    class="new new_password rounded-3"
+                    type="password"
+                    placeholder="Confirmer mot de passe"
+                    id="password"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="submit"
+              class="button_sign rounded-4 fs-5 m-auto shadow-lg"
+              data-bs-toggle="mmodal"
+              data-bs-target="#confirmSignup"
+            >
+              S'inscrire
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Confirm Sign Up -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="confirmSignup"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title ms-3" id="exampleModalLabel">Bienvenue</h1>
+            <button
+              type="button"
+              class="btn-close mb-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="Text_welcome modal-body fs-4 text-center">
+            Vous êtes maintenant membre de la famille
+            <span class="fw-bold">Ibn Batouta</span> et nous sommes impatients
+            de travailler avec vous pour assurer le succès académique et
+            personnel de votre enfant.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/log.js" type="module"></script>
+  </body>
+</html>

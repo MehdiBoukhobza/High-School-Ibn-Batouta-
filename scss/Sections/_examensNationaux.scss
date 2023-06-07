@@ -1,0 +1,88 @@
+@use "../variables" as *;
+
+.nationaux-container {
+  position: absolute;
+  top: 100vh;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .nationaux-container {
+    top: 37vh;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 3rem;
+  color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    margin-top: 15px;
+    content: "";
+    width: 50%;
+    background-color: $tertiary;
+    display: block;
+    height: 4px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+.filiere {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .filiere {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.toutes-les-filieres {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  place-items: center;
+
+  .material-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .toutes-les-filieres {
+    display: flex;
+    flex-direction: column;
+
+    .material-container {
+      width: 100%;
+    }
+
+    &:nth-child(even) {
+      margin-bottom: 160px;
+    }
+  }
+}

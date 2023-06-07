@@ -1,0 +1,791 @@
+@use "../variables" as *;
+
+// Styling the top bg img
+.up-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+
+  // For the bg img
+  .top-bg-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  // for the div that has a light blue bgc
+  .blue-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    opacity: 0.5;
+
+    span {
+      color: $white;
+    }
+  }
+
+  // Styling the div for "Lycée qualifiant Ibn Batouta"
+  .front-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      display: inline;
+      color: $white;
+      font-size: 3.6rem;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      font-weight: 500;
+
+      p {
+        display: inline;
+        color: $tertiary;
+        font-size: 3.6rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .up-img {
+    height: 35vh;
+
+    .top-bg-img {
+      height: 35vh;
+    }
+
+    .front-text {
+      span {
+        font-size: 2.5rem;
+        p {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Styling the about section
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .myCard {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 95%;
+    height: 100%;
+    background-color: $gray-1;
+    margin-bottom: 150px;
+    border-radius: 15px;
+    z-index: -1;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    .myCard-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+
+      .waterSlideShape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $tertiary;
+        width: 50%;
+        height: 100.3%;
+        z-index: 0;
+        border-radius: 15px 0 0 15px;
+        clip-path: polygon(0 0, 17% 0, 100% 100%, 0% 100%);
+      }
+
+      .myCard-title {
+        font-size: 2rem;
+        color: $primary;
+        font-weight: 600;
+        z-index: 1;
+      }
+
+      .myCard-text {
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $gray-8;
+        margin-top: 40px;
+        z-index: 1;
+      }
+    }
+
+    .myCard-img {
+      display: flex-end;
+      // justify-content: end;
+      // align-items: end;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 15px 15px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    .myCard {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      .myCard-img {
+        display: none;
+      }
+
+      .myCard-body {
+        padding: 10px;
+        .myCard-title {
+          font-size: 1.3rem;
+        }
+
+        .myCard-text {
+          margin-top: 20px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// STYLING THE EXAMS SECTION
+.examens {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+
+  .examens-img {
+    width: 120%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .examens-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 120px;
+
+    .examens-text {
+      width: 90%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $gray-8;
+    }
+
+    .examens-btn {
+      color: $black;
+      text-decoration: none;
+      position: relative;
+      border: 3px solid $tertiary;
+      background-color: $white;
+      padding: 3px 5px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-top: 30px;
+      overflow: hidden;
+      transition: all 0.5s ease-out;
+      z-index: 0;
+
+      div {
+        position: relative;
+        z-index: 2 !important;
+        margin: 0;
+      }
+
+      &:hover {
+        color: $white;
+        cursor: pointer;
+
+        &::before {
+          transform: translate(-10%, -33%) scale(1);
+          opacity: 1;
+        }
+      }
+    }
+    .examens-btn::before {
+      content: "";
+      position: absolute;
+      width: 10rem;
+      height: 10rem;
+      left: 0;
+      top: 0;
+      transform: translate(-10%, -37.5%) scale(0.05);
+      background: $secondary;
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+      // z-index: 1;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .examens {
+    margin-top: -100px;
+
+    .homePage-title {
+      font-size: 1.6rem;
+      margin: 0 0 10px 0;
+    }
+
+    .examens-img {
+      width: 140%;
+      height: auto;
+      margin-top: 1.3rem;
+    }
+
+    .examens-body {
+      padding: 0;
+      padding-left: 25px;
+
+      .examens-text {
+        font-size: 0.8rem;
+        font-weight: normal;
+      }
+
+      .examens-btn {
+        border: 2px solid $tertiary;
+        padding: 3px 5px;
+        font-size: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Section d'admission
+.admission {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 95%;
+  height: 100%;
+  margin-top: 15%;
+
+  .admission-img {
+    width: 120%;
+    height: 90%;
+    border-radius: 15px;
+  }
+
+  .admission-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+
+    .admission-text {
+      width: 90%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $gray-8;
+    }
+
+    .admission-btn {
+      color: $black;
+      text-decoration: none;
+      position: relative;
+      border: 3px solid $tertiary;
+      background-color: $white;
+      padding: 3px 5px 3px 5px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-top: 30px;
+      overflow: hidden;
+      transition: all 0.5s ease-out;
+      z-index: 0;
+
+      div {
+        position: relative;
+        z-index: 2 !important;
+        margin: 0;
+      }
+
+      &:hover {
+        color: $white;
+        cursor: pointer;
+
+        &::before {
+          transform: translate(-4%, -37.5%) scale(1);
+          opacity: 1;
+        }
+      }
+    }
+    .admission-btn::before {
+      content: "";
+      position: absolute;
+      width: 10rem;
+      height: 10rem;
+      left: 0;
+      top: 0;
+      transform: translate(-4%, -37.5%) scale(0.05);
+      background: $secondary;
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .admission {
+    margin-top: 60px;
+
+    .homePage-title {
+      font-size: 1.6rem;
+      margin: 0 0 10px 0;
+    }
+
+    .admission-img {
+      width: 140%;
+      height: auto;
+      margin-top: 2.5rem;
+    }
+
+    .admission-body {
+      padding: 0;
+
+      .admission-text {
+        font-size: 0.8rem;
+        font-weight: normal;
+      }
+
+      .admission-btn {
+        border: 2px solid $tertiary;
+        padding: 3px 5px;
+        font-size: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Section des evenements
+.events-section {
+  width: 100%;
+  height: auto;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 0;
+  margin-top: 17%;
+  border: 1px solid $gray-3;
+
+  .events-header {
+    width: 100%;
+    height: 40px;
+    background-color: $gray-4;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    .h-shape {
+      background-color: $primary;
+      width: 700px;
+      height: 100%;
+      clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+      display: flex;
+      align-items: center;
+
+      .h-text {
+        color: $white;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-left: 20px;
+        margin-top: 15px;
+      }
+    }
+  }
+  .h-triangle {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: $primary;
+    width: 4%;
+    height: 25px;
+    margin-top: -21px;
+  }
+
+  .events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 540px;
+    transition: all 0.5s ease-in-out;
+
+    .event {
+      position: relative;
+      width: 350px;
+      height: 500px;
+      background-color: $gray-2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      transition: all 0.5s ease-in-out;
+
+      .event-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+      }
+
+      .event-h {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .event-date {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: $tertiary;
+          width: 90px;
+          height: 100px;
+          border-radius: 13px 0 13px 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: $white;
+          font-size: 1rem;
+          font-weight: 600;
+
+          span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $white;
+          }
+        }
+      }
+
+      .event-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 87%;
+        height: 100%;
+        padding: 10px;
+
+        .event-title {
+          font-size: 1.5rem;
+          color: $tertiary;
+          font-weight: bold;
+        }
+
+        .event-text {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 1px 3px 7px rgba($color: $black, $alpha: 0.4);
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .events-section {
+    display: none;
+  }
+}
+
+// ------------------------------------------------------- STATS -------------------------------------------------------
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  width: 100%;
+  height: 50%;
+  margin: 140px 0 0 0;
+  padding: 0;
+  background-color: $gray-2;
+
+  .stats-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    background-color: $gray-0;
+    transition: all 0.5s ease-in-out;
+
+    .stat-icon {
+      color: $tertiary;
+      font-size: 3rem;
+    }
+
+    .stats-title {
+      font-size: 4rem;
+      color: $tertiary;
+      font-weight: bold;
+      margin: 10px 0 0 0;
+    }
+
+    .stats-txt {
+      font-size: 1.8rem;
+      margin: 10px 0 0 0;
+      font-weight: 600;
+    }
+  }
+
+  .middle {
+    border-left: 3px solid $tertiary;
+    border-right: 3px solid $tertiary !important;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .stats-container {
+    width: 100vw;
+    transform: translateX(-31px);
+    margin: 30px 0;
+
+    .stats-item {
+      height: 140px;
+
+      .stat-icon {
+        font-size: 2rem;
+      }
+
+      .stats-title {
+        font-size: 2.5rem;
+      }
+
+      .stats-txt {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// Styling all of the section's titles
+.homePage-title {
+  font-size: 3.4rem;
+  color: $primary;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 600px) {
+  .homePage-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 30px 0;
+  }
+}
+
+// ------------------------------------------------------- BUTTONS DISTRIBUTER -------------------------------------------------------
+.buttons-distributer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .buttons-distributer {
+    display: none;
+  }
+}
+
+// ------------------------------------------------------- REDIRECT BUTTONS/CARDS -------------------------------------------------------
+.redirect-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  .redirect-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: $white;
+    color: $primary;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    border: 4px solid $tertiary;
+    cursor: pointer;
+    text-decoration: none;
+
+    .redirect-icon {
+      font-size: 2.3rem;
+      color: $tertiary;
+      margin: 20px;
+    }
+
+    .redirect-card-title {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .redirect-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    margin-top: -220px;
+
+    .redirect-card {
+      width: 80%;
+      height: 70px;
+      border: 3px solid $tertiary;
+      margin-bottom: 0;
+
+      .redirect-icon {
+        font-size: 1.5rem;
+        margin: 0 30px 0 0;
+      }
+
+      .redirect-card-title {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// ---------------------------------------- ANIMATIONS ON SCROLL ----------------------------------------
+.hiddenCard {
+  opacity: 0.4;
+  transform: scale(0.95) translateY(40px);
+  transition: all 1s ease-in-out;
+}
+.showCard {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: all 1s ease-in-out;
+}
+
+.hiddenShape {
+  transform: translateX(-270px);
+  transition: all 1s ease-in-out;
+}
+.showShape {
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+// The exam section
+.hidden-exam-img {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.7s ease-in-out;
+  filter: blur(5px);
+}
+.show-exam-img {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s ease-in-out;
+  filter: none;
+}
+
+.hidden-exam-body {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: all 1s ease-in-out;
+}
+.show-exam-body {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+
+// The admission section
+.hidden-admission-img {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.7s ease-in-out;
+  filter: blur(5px);
+}
+.show-admission-img {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s ease-in-out;
+  filter: none;
+}
+
+.hidden-admission-body {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: all 1s ease-in-out;
+}
+.show-admission-body {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+
+.hidden-events {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+.show-events {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-out;
+}
+
+.hidden-date {
+  opacity: 0;
+  transform: translateX(-100%) scale(0.9);
+  // transition: all 3s ease-in-out;
+  filter: blur(5px);
+}
+.show-date {
+  transform: translateX(0) scale(1);
+  filter: blur(0);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}

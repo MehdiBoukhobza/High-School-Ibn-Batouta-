@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- LINKING THE FONTAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Lato:wght@300;400;700;900&family=Poppins:wght@400;500;600;700;800;900&family=Press+Start+2P&family=Roboto&family=Source+Serif+Pro&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/logo_Ibn_Batouta/battouta_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Lycée Ibn Batouta</title>
+  </head>
+
+  <body>
+    <!-- --------------------------------------------------- NAVBAR --------------------------------------------------- -->
+    <nav id="myNavBar" class="navbar sticky-top">
+      <div class="navbar-btns d-flex justify-content-center">
+        <img src="#" alt="" class="#" />
+        <a class="navbar-btn" id="home" href="./index.html">ACCUEIL</a>
+        <a class="navbar-btn" id="apropos" href="./Pourquoi_Ibn_Batouta.html"
+          >A PROPOS</a
+        >
+        <a class="navbar-btn" id="admission" href="./Admission.html"
+          >ADMISSION</a
+        >
+        <a class="navbar-btn" id="examens" href="./Examens_page_accueil.html"
+          >EXAMENS</a
+        >
+        <div id="dropdown" class="dropdown-content rounded-2">
+          <a id="why_drop" href="./Examens_nationaux.html">Examens Nationaux</a>
+          <a href="./Examens_regionaux.html">Examens Régionaux</a>
+        </div>
+        <a class="navbar-btn ps-4" id="contact" href="./contact.html"
+          >CONTACT</a
+        >
+        <a class="navbar-btn ps-4" id="connection" href="./Connexion.html"
+          >CONNEXION</a
+        >
+      </div>
+    </nav>
+
+    <!-- --------------------------------------------------- HOMEPAGE --------------------------------------------------- -->
+    <header class="section sec0 french">
+      <!--  ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ SVG HERE  ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ -->
+      <div class="line-container">
+        <svg
+          preserveAspectRatio="xMidYMax meet"
+          viewBox="-202 0 1086 3101"
+          fill="none"
+          height="700px"
+          class="svg"
+        >
+          <path
+            d="M346.63 0C346.63 878.373 346.63 777.168 346.63 786.5H3.5V1183.5H667.5V1594.5H345.931V2665.53V2743.02V2945C328.207 2950.5 296.538 2965.55 311.65 2981.74C326.761 2997.94 357.747 3000.32 371.35 2999.49C378.346 2999.33 392.339 3003.59 392.339 3021.99C392.339 3040.39 338.546 3045.65 311.65 3045.99C297.657 3049.32 272.938 3059.48 285.997 3073.48C299.057 3087.48 413.016 3079.31 468.363 3073.48"
+            stroke="#FFC000"
+            stroke-width="7"
+          />
+        </svg>
+      </div>
+
+      <!-- ************************************************** TOP IMAGE ************************************************** -->
+      <div class="up-img">
+        <img
+          src="./images/Home_page/up_img.jpg"
+          alt="Image du lycée qualifiant Ibn Batouta"
+          class="top-bg-img"
+        />
+        <div class="blue-cover"></div>
+        <div class="front-text">
+          <span>
+            الثانوية التأهيلية
+            <p>ابن بطوطة</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <!-- ************************************************** ABOUT ************************************************** -->
+        <div class="about">
+          <h1 class="homePage-title">مقدمة عامة</h1>
+
+          <!-- ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ The about section's card ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ -->
+          <div class="myCard hiddenCard">
+            <div class="myCard-body">
+              <div class="waterSlideShape hiddenShape"></div>
+              <h3 class="myCard-title">ثانوية ابن بطوطة التأهيلية</h3>
+              <p class="myCard-text">
+                يعتبر ثانوية ابن بطوطة واحدة من أفضل المدارس في المغرب. لا يمكن
+                تصنيف هذا الأمر على أنه مجرد صدفة ، بل إنه يعود إلى جودة التعليم
+                والرعاية التي يوفرها المؤسسة للطلاب. إن ثانوية ابن بطوطة هي
+                ثانوية عامة وتكنولوجية. تقع في مدينة طنجة بالمغرب. يتم إدارتها
+                بواسطة جمعية أولياء أمور ابن بطوطة. تستقبل الطلاب من الصف السادس
+                حتى الصف الثاني عشر. إنها واحدة من أقدم ثانويات مدينة طنجة
+                وتعتبر واحدة من أفضل ثانوياتها. تمتاز بمنهجية تعليمية متميزة
+                وكفاءة في الإرشاد والتوجيه للطلاب. تضم مجموعة من المعلمين
+                المتميزين والملتزمين بتقديم تعليم عالي الجودة. بالإضافة إلى ذلك
+                ، توفر ثانوية ابن بطوطة بيئة تعليمية مناسبة تساهم في تنمية
+                مهارات الطلاب وقدراتهم الفكرية والاجتماعية. يعتبر هذا الاندماج
+                المثالي من العوامل المختلفة سببًا رئيسيًا في تفوق ثانوية ابن
+                بطوطة وانتمائها لقمة المدارس في طنجة
+              </p>
+            </div>
+
+            <div class="myCard-img">
+              <img
+                src="./images/Home_page/porte_ib.jpeg"
+                alt="Image de la porte dy lycée"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ************************************************** EXAMENS ************************************************** -->
+        <div class="examens">
+          <!-- IMAGE DE LA CARTE INVISIBLE DES EXAMENS -->
+          <div class="hidden-exam-img">
+            <img
+              class="examens-img"
+              src="./images/Home_page/examens.png"
+              alt="image des examens"
+            />
+          </div>
+
+          <!-- CORPS/TEXTE DE LA CARTE INVISIBLE -->
+          <div class="examens-body hidden-exam-body">
+            <h1 class="homePage-title">الامتحانات</h1>
+            <p class="examens-text"></p>
+            <a href="./Examens_page_accueil.html" class="examens-btn">
+              <div>
+                رؤية المزيد
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ************************************************** ADMISSION ************************************************** -->
+        <div class="admission">
+          <!-- CORPS/TEXTE DE LA CARTE INVISIBLE D'ADMISSION -->
+          <div class="admission-body hidden-admission-body">
+            <h1 class="homePage-title">القبول</h1>
+            <p class="admission-text"></p>
+            <a href="./Pourquoi_Ibn_Batouta.html" class="admission-btn">
+              <div>
+                رؤية المزيد
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- IMAGE DE LA CARTE INVISBILE D'ADMISSION -->
+          <div class="hidden-admission-img">
+            <img
+              src="./images/Home_page/admission.png"
+              alt="Image d'admission"
+              class="admission-img"
+            />
+          </div>
+        </div>
+
+        <!-- ************************************************** EVENEMENTS ************************************************** -->
+        <div class="events-section hidden-events">
+          <!-- gray-2 bgc -->
+          <div class="events-header">
+            <div class="h-shape">
+              <p class="h-text">الأحداث القادمة</p>
+            </div>
+          </div>
+          <div class="h-triangle"></div>
+
+          <div class="events">
+            <!-- ----------------------------- EVENT 1 ----------------------------- -->
+            <div class="event hidden-events">
+              <div class="event-h">
+                <img
+                  src="./images/Home_page/event.png"
+                  alt="event image"
+                  class="event-img"
+                />
+                <div class="event-date hidden-date">
+                  <span>07</span> مارس 2023
+                </div>
+              </div>
+
+              <div class="event-body">
+                <p class="event-title">الحدث رقم 1</p>
+
+                <p class="event-text">
+                  العميل نفسه ، سيتمكن العميل من متابعة اكتساب الشركة. لكن هذا
+                  الخطأ ليس في متعة تلك الواجبات ، أليس كذلك؟ إنه يتمنى ألا تكون
+                  الأوقات السعيدة من خلال الإطراء لا شيء أبدًا ، ولا تنفر البعض
+                  منها.
+                </p>
+              </div>
+            </div>
+
+            <!-- ----------------------------- EVENT 2 ----------------------------- -->
+            <div class="event hidden-events">
+              <div class="event-h">
+                <img
+                  src="./images/Home_page/event.png"
+                  alt="event image"
+                  class="event-img"
+                />
+                <div class="event-date hidden-date">
+                  <span>04</span> مارس 2023
+                </div>
+              </div>
+
+              <div class="event-body">
+                <p class="event-title">الحدث رقم 2</p>
+
+                <p class="event-text">
+                  العميل نفسه ، سيتمكن العميل من متابعة اكتساب الشركة. لكن هذا
+                  الخطأ ليس في متعة تلك الواجبات ، أليس كذلك؟ إنه يتمنى ألا تكون
+                  الأوقات السعيدة من خلال الإطراء لا شيء أبدًا ، ولا تنفر البعض
+                  منها.
+                </p>
+              </div>
+            </div>
+
+            <!-- ----------------------------- EVENT 3 ----------------------------- -->
+            <div class="event hidden-events">
+              <div class="event-h">
+                <img
+                  src="./images/Home_page/event.png"
+                  alt="event image"
+                  class="event-img"
+                />
+                <div class="event-date hidden-date">
+                  <span>01</span> مارس 2023
+                </div>
+              </div>
+
+              <div class="event-body">
+                <p class="event-title">الحدث رقم 3</p>
+
+                <p class="event-text text-center">
+                  العميل نفسه ، سيتمكن العميل من متابعة اكتساب الشركة. لكن هذا
+                  الخطأ ليس في متعة تلك الواجبات ، أليس كذلك؟ إنه يتمنى ألا تكون
+                  الأوقات السعيدة من خلال الإطراء لا شيء أبدًا ، ولا تنفر البعض
+                  منها.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ************************************************** STATISTICS ************************************************** -->
+        <div class="stats-container hidden">
+          <!-- Nombre d'annees de travail -->
+          <div class="stats-item">
+            <h3 class="stats-title counter" data-target="108"></h3>
+            <p class="stats-txt">سنة من تعليم</p>
+            <i class="fas fa-school stat-icon"></i>
+          </div>
+
+          <!-- Nombre de professeurs -->
+          <div class="stats-item middle">
+            <h3 class="stats-title counter" data-target="50"></h3>
+            <p class="stats-txt">سنة من تعليم</p>
+            <i class="fas fa-chalkboard-teacher stat-icon"></i>
+          </div>
+
+          <!-- Nombre de membres de l'association des parents -->
+          <div class="stats-item">
+            <h3 class="stats-title counter" data-target="20"></h3>
+            <p class="stats-txt">إطارا إداريا</p>
+            <i class="fas fa-people-group stat-icon"></i>
+          </div>
+        </div>
+
+        <!-- *********************************************** Bottom page btns *********************************************** -->
+        <div class="buttons-distributer">
+          <img
+            src="./images/Home_page/buttons_distributer.png"
+            alt="Buttons distributer"
+          />
+        </div>
+
+        <div class="redirect-cards">
+          <!-- contact us -->
+          <a class="redirect-card" href="./contact.html">
+            <i class="fa-solid fa-comments redirect-icon"></i>
+            <p class="redirect-card-title">تواصلوا معنا</p>
+          </a>
+
+          <!-- About -->
+          <a class="redirect-card" href="./Pourquoi_Ibn_Batouta.html">
+            <i class="fa-solid fa-file-alt redirect-icon"></i>
+            <p class="redirect-card-title">فيما يخص ج.آ.إ.ب</p>
+          </a>
+
+          <!-- Examens nationaux et régionaux -->
+          <a class="redirect-card p-3" href="./Examens_page_accueil.html">
+            <i class="fa-solid fa-book redirect-icon"></i>
+            <p class="redirect-card-title">الإمتحانات</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="footer position-relative" style="margin-top: 9rem">
+      <div class="conatiner position-absolute top-50 start-50 translate-middle">
+        <div
+          class="container d-flex justify-content-center align-items-center gap-3"
+        >
+          <p class="line"></p>
+          <p class="footer_text fw-bolder">IBN BATOUTA</p>
+          <p class="line"></p>
+        </div>
+
+        <div
+          class="container icons d-flex justify-content-center align-items-center mt-n3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="60"
+            height="60"
+            viewBox="0 0 50 50"
+            class="icon_F"
+          >
+            <path
+              d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z"
+            ></path>
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="60"
+            height="60"
+            viewBox="0 0 30 30"
+            class="icon_F"
+          >
+            <path
+              d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"
+            ></path>
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="60"
+            height="60"
+            viewBox="0 0 50 50"
+            class="icon_F"
+          >
+            <path
+              d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+            ></path>
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="60"
+            height="60"
+            viewBox="0 0 50 50"
+            class="icon_F"
+          >
+            <path
+              d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>

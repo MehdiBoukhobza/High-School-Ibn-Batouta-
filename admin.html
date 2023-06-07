@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/Sections/admin.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo-64.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin Platform</title>
+  </head>
+  <body style="font-family: 'Ubuntu', sans-serif" class="mt-5 pt-4">
+    <nav id="myNavBar" class="navbar sticky-top">
+      <div class="navbar-btns d-flex justify-content-center">
+        <img src="#" alt="" class="#" />
+        <a class="navbar-btn" id="home" href="./index.html">ACCUEIL</a>
+        <a class="navbar-btn" id="apropos" href="./Pourquoi_Ibn_Batouta.html"
+          >A PROPOS</a
+        >
+        <a class="navbar-btn" id="admission" href="./Admission.html"
+          >ADMISSION</a
+        >
+        <a class="navbar-btn" id="examens" href="./Examens_page_accueil.html"
+          >EXAMENS</a
+        >
+        <div id="dropdown" class="dropdown-content rounded-2">
+          <a id="why_drop" href="./Examens_nationaux.html">Examens Nationaux</a>
+          <a href="./Examens_regionaux.html">Examens Régionaux</a>
+        </div>
+        <a class="navbar-btn ps-4" id="contact" href="./contact.html"
+          >CONTACT</a
+        >
+        <a class="navbar-btn ps-4" id="connection" href="./Connexion.html"
+          >CONNEXION</a
+        >
+      </div>
+    </nav>
+
+    <section>
+      <header class="header mt-4">
+        <div class="left-area flex">
+          <div class="right-area flex">
+            <img src="./images/img_admin/man.jpg" alt="user-photo" />
+          </div>
+          <span class="mail-text">Plateforme Administrateur</span>
+        </div>
+        <div class="middle-area">
+          <div class="search">
+            <ion-icon name="search-outline" class="hover"></ion-icon>
+            <input type="search" placeholder="Search mail" />
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="nav_container">
+          <div class="nav_middle">
+            <ul class="text-nowrap">
+              <li>
+                <a href="#">
+                  <ion-icon name="documents"></ion-icon>
+                  Toutes les demandes
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="school"></ion-icon>
+                  Certificat de Scolarité
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="checkmark-done"></ion-icon>
+                  Relevés de Note
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="time"></ion-icon>
+                  Rendez-Vous
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="main_content mt-5 ms-4">
+        <div class="messages_area"></div>
+      </main>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

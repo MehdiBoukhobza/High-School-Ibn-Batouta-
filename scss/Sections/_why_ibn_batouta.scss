@@ -1,0 +1,359 @@
+@use "../variables" as *;
+
+#home:hover,
+#connection:hover,
+#admission:hover,
+#examens:hover,
+#contact:hover,
+#apropos {
+  color: rgb(194, 194, 194);
+  transition: color 0.3s ease-in-out !important;
+}
+
+.navbar-btn:hover::before,
+#apropos::before {
+  width: 3%;
+}
+
+.info-section-for-why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+
+  .hero-title {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: 60%;
+      background-color: $tertiary;
+      height: 5px;
+      display: block;
+      justify-self: center;
+      margin-top: 10px;
+    }
+  }
+  .hero-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+
+    .hero-body {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin: 10px 0;
+
+      .hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        font-weight: 500;
+        color: $gray-8;
+        font-size: 1.1rem;
+      }
+
+      .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 70%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+          box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.6);
+        }
+      }
+    }
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    background-color: $secondary;
+    margin: 30px 0;
+
+    .stats-title {
+      color: $tertiary;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .stats-subtitle {
+      color: $gray-1;
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 85%;
+      margin-top: 15px;
+
+      .stat-item {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+        border-right: 3px solid $tertiary;
+      }
+      .end {
+        border: 0;
+      }
+      h5 {
+        color: $gray-2;
+        font-size: 1.6rem;
+
+        &::after {
+          content: "";
+          display: block;
+          background-color: $white;
+          width: 8vw;
+          height: 3px;
+          margin: 10px 0 5px 0;
+          justify-self: center;
+        }
+      }
+      h6 {
+        color: $tertiary;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      p {
+        color: $gray-4;
+        font-size: 1rem;
+        padding: 5px;
+      }
+    }
+  }
+
+  .missions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+
+    .missions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .mission-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+
+        img {
+          width: 80%;
+          border-radius: 15px;
+          transition: all 0.4s ease-in-out;
+
+          &:hover {
+            transform: translate(-3px, -2px);
+            box-shadow: 1px 2px 5px rgba($color: #000000, $alpha: 0.6);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+        span {
+          margin-top: 10px;
+
+          figure {
+            color: $tertiary;
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+          p {
+            color: $gray-8;
+            font-size: 1rem;
+            padding: 5px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .tmg-title {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: 13%;
+      background-color: $tertiary;
+      height: 5px;
+      display: block;
+      justify-self: center;
+      margin-top: 10px;
+    }
+  }
+  .temoignage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 50px 0;
+    padding: 0px 100px;
+    border-left: 4px solid $secondary;
+
+    p {
+      color: $gray-8;
+      font-size: 1.08rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    span {
+      justify-self: end;
+      color: $quartary;
+      align-self: self-end;
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .info-section-for-why {
+    width: 90%;
+    top: 30px;
+    left: 5%;
+
+    .hero-title {
+      font-size: 1.3rem;
+    }
+    .hero-card {
+      width: 90%;
+
+      .hero-body {
+        display: flex;
+        flex-direction: column;
+
+        .hero-text {
+          font-size: 0.8rem;
+        }
+
+        .hero-img {
+          img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.6);
+          }
+        }
+      }
+    }
+    .stats-container {
+      transform: translateX(0);
+      width: 100vw;
+
+      .stats-title {
+        font-size: 1.3rem;
+      }
+      .stats-subtitle {
+        font-size: 0.8rem;
+      }
+      .stats {
+        width: 115%;
+        margin-top: 0;
+        
+        h5 {
+          font-size: 0.8rem;
+          &::after {
+            display: none;
+          }
+        }
+        h6 {
+          font-size: 0.7rem;
+        }
+        p {
+          width: 100%;
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .missions-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+  
+      .missions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+  
+        .mission-item {
+  
+          img {
+            width: 70%;
+          }
+  
+          span {
+            margin-top: 10px;
+  
+            figure {
+              font-size: 1.1rem;
+            }
+            p {
+              font-size: .8rem;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .tmg-title {
+      font-size: 1.3rem;
+    }
+    .temoignage {
+      width: 95vw;
+      margin: 30px 0;
+      padding: 0px 10px;
+      margin-bottom: 250px;
+  
+      p {
+        color: $gray-8;
+        font-size: .8rem;
+        font-weight: 500;
+        text-align: center;
+      }
+  
+      span {
+        justify-self: end;
+        color: $quartary;
+        align-self: self-end;
+        font-weight: 500;
+      }
+    }
+  }
+}

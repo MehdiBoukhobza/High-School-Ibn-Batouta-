@@ -1,0 +1,117 @@
+// Sections
+@use "./Sections/header";
+@use "./Sections/examens";
+@use "./Sections/examensRegionaux";
+@use "./Sections/examensNationaux";
+@use "./Sections/why_ibn_batouta";
+@use "./Sections/admin.scss";
+@use "./Sections/app.scss";
+@use "./Sections/platform.scss";
+@use "./Sections/log.scss";
+@use "./Sections/contact.scss";
+
+// Components
+@use "./Components/navbar";
+@use "./Components/footer";
+
+// Variables
+@use "./variables" as *;
+
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Ubuntu", "Roboto", "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.section {
+  font-family: "Ubuntu", "Roboto", "Poppins", sans-serif;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-section {
+  position: absolute;
+  top: 110vh;
+  width: 85%;
+  overflow: visible;
+}
+@media screen and (max-width: 600px) {
+  .info-section {
+    top: 35vh;
+    overflow: visible;
+  }
+}
+
+.line-container {
+  position: relative;
+  top: 47vh;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  z-index: -9;
+}
+@media screen and (max-width: 600px) {
+  .line-container {
+    display: none;
+  }
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+// Footer
+
+.footer_text {
+  font-size: 80px;
+  color: #fdfcfa;
+  white-space: nowrap;
+}
+
+.footer {
+  background-image: url("/Ibn-Batouta-Website/images/Pictures_app/background footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 300px;
+  background-color: #264b77;
+  background-blend-mode: color-burn;
+}
+
+.line {
+  border-bottom: 5px solid #b67929;
+  width: 228px;
+}
+
+.icons {
+  gap: 95px;
+  cursor: pointer;
+}
+
+.icon_F:hover {
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.4s;
+}
+.icon_F {
+  transform: translateY(5px);
+  transition: all ease-in-out 0.4s;
+  fill: #b67929;
+}
