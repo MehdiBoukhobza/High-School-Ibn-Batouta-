@@ -26,7 +26,7 @@ This web application is developed using the following technologies:
 
 - **Frontend Development**: The frontend is implemented using HTML, CSS, and JavaScript to create a responsive and user-friendly interface.
 
-- **Database**: Firebase's Firestore database is used to store and retrieve data related to parent requests, user profiles, and school information.
+- **Database**: Firebase's Realtime database is used to store and retrieve data related to parent requests, user profiles, and school information.
 
 ## Development Status
 
@@ -39,4 +39,22 @@ You can explore the project repository on GitHub to find the latest code, docume
 To run the project locally and contribute to its development, follow these steps:
 
 1. Clone the project repository from GitHub:
+https://github.com/MehdiBoukhobza/High-School-Ibn-Batouta-.git
+
+2. Set up the development environment and install the required dependencies for frontend development.
+
+3. Open the project in your preferred development environment and explore the codebase.
+
+4. Run the development server and access the application in your web browser.
+
+For detailed instructions on setting up the development environment, running tests, and contributing to the project, please refer to the project's documentation available in the repository.
+
+## Contact Information
+
+If you have any questions, concerns, or suggestions regarding the Ibn Batouta High School Web Application project, please feel free to reach out to us:
+
+- El Mehdi Boukhobza: *elmehdiboukhobza2002@gmail.com* - GitHub: [MehdiBoukhobza](https://github.com/MehdiBoukhobza)  - LinkedIn: *[El Mehdi Boukhobza](https://www.linkedin.com/in/el-mehdi-boukhobza-3a402126a/)*
+- Ihab Bokal: *bokalihab@gmail.com* - GitHub: [Ihab-Bokal](https://github.com/Ihab-Bokal) -Linkedin: [Ihab Bokal](https://www.linkedin.com/in/ihab-bokal-6675b7246/)
+
+Thank you for your interest in our project! 
 
