@@ -1,6 +1,6 @@
 # Ibn Batouta High School Web Application
 
-Welcome to the Ibn Batouta High School Web Application project! This is a collaborative effort by El Mehdi Boukhobza and [Your Name] as part of our first-year freelance project for the Software Engineering program at Mohammadia School of Engineers.
+Welcome to the Ibn Batouta High School Web Application project! This is a collaborative effort by El Mehdi Boukhobza and Ihab Bokal as part of our first-year freelance project.
 
 ## Project Overview
 
