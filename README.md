@@ -1,1 +1,1 @@
-# High-School-Ibn-Batouta-
+# High-School-Ibn-Batouta
